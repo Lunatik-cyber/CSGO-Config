@@ -158,7 +158,7 @@
 		"radio"
 		{
 			"hotkey"	"3"
-			"title"	"РАДИО"
+			"title"	"RADIO"
 			"timeout"	"3"
 			
 			"Commands"
