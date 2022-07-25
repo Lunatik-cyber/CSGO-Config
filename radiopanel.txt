@@ -1,0 +1,230 @@
+"RadioPanel.txt"
+{
+
+//"SFUI_StandardRadio"
+//"SFUI_GroupRadio"	
+//"SFUI_ReportRadio"	
+	"Groups"
+	{
+		"standard"
+		{
+			"hotkey"	"1"
+			"title"	"BOT MANAGEMENT"
+			"timeout"	"10"
+			
+			"Commands"
+			{
+				"Add Bot (CT)"
+				{
+					"hotkey"	"1"
+					"label"	"Add to CT"
+					"cmd"	"bot_add_ct"
+				}
+				
+				"Add Bot (T)"
+				{
+					"hotkey"	"2"
+					"label"	"Add to T"
+					"cmd"	"bot_add_t"
+				}
+				
+				"Bot Place"
+				{
+					"hotkey"	"3"
+					"label"	"Teleport bot"
+					"cmd"	"bot_stop 1; bot_place"
+				}
+				
+				"Bot Crouch (ON)"
+				{
+					"hotkey"	"4"
+					"label"	"Crouch (ON)"
+					"cmd"	"bot_crouch 1"
+				}
+				
+				"Bot Crouch (OFF)"
+				{
+					"hotkey"	"5"
+					"label"	"Crouch (OFF)"
+					"cmd"	"bot_crouch 0"
+				}
+				
+				"Bot Mimic (ON)"
+				{
+					"hotkey"	"6"
+					"label"	"Copy Motions (ON)"
+					"cmd"	"bot_mimic_yaw_offset 0; bot_mimic 1"
+				}
+				
+				"Bot Mimic (OFF)"
+				{
+					"hotkey"	"7"
+					"label"	"Copy Motions (OFF)"
+					"cmd"	"bot_mimic_yaw_offset 0; bot_mimic 0"
+				}
+				
+				"Stop all bots"
+				{
+					"hotkey"	"8"
+					"label"	"Stop bots"
+					"cmd"	"bot_stop 1"
+				}
+				
+				"Kick all bots"
+				{
+					"hotkey"	"9"
+					"label"	"Kick bots"
+					"cmd"	"bot_kick"
+				}
+				
+			}
+		}
+		
+		"training"
+		{
+			"hotkey"	"2"
+			"title"	"TRAINING"
+			"timeout"	"10"
+			
+			"Commands"
+			{
+				"Godmode"
+				{
+					"hotkey"	"1"
+					"label"	"God mode"
+					"cmd"	"sv_cheats 1; god"
+				}
+				
+				"Drawclipbrushes1"
+				{
+					"hotkey"	"2"
+					"label"	"Boost Search (ON)"
+					"cmd"	"sv_cheats 1; r_drawclipbrushes 2"
+				}
+				
+				"Drawclipbrushes0"
+				{
+					"hotkey"	"3"
+					"label"	"Boost Search (OFF)"
+					"cmd"	"r_drawclipbrushes 0"
+				}
+				
+				"Showimpacts1"
+				{
+					"hotkey"	"4"
+					"label"	"Shooting Search (ON)"
+					"cmd"	"sv_cheats 1; sv_showimpacts 1; sv_showimpacts_time 5; sv_showimpacts_penetration 1"
+				}	
+				
+				"Showimpacts0"
+				{
+					"hotkey"	"5"
+					"label"	"Shooting Search (OFF)"
+					"cmd"	"sv_showimpacts 0; sv_showimpacts_time 4; sv_showimpacts_penetration 0"
+				}
+				
+				"Trajectory1"
+				{
+					"hotkey"	"6"
+					"label"	"Grenade Drop (ON)"
+					"cmd"	"sv_cheats 1; sv_grenade_trajectory 1; sv_grenade_trajectory_dash 1; sv_grenade_trajectory_thickness 1; sv_grenade_trajectory_time 10; cl_grenadepreview 1"
+				}
+				
+				"Trajectory0"
+				{
+					"hotkey"	"7"
+					"label"	"Grenade Drop (OFF)"
+					"cmd"	"sv_grenade_trajectory 0; cl_grenadepreview 0"
+				}
+				
+				"PVPTraining"
+				{
+					"hotkey"	"8"
+					"label"	"Duel mode"
+					"cmd"	"sv_cheats 0; mp_forcecamera 1; mp_solid_teammates 0; mp_limitteams 0; mp_autoteambalance 0; mp_spectators_max 10; mp_roundtime 3; mp_roundtime_defuse 3; mp_roundtime_hostage 3; mp_maxmoney 16000; mp_startmoney 700; mp_freezetime 0; mp_buytime 60; mp_buy_anywhere 0; mp_radar_showall 0; sv_enablebunnyhopping 0; sv_autobunnyhopping 0; sv_infinite_ammo 2; ammo_grenade_limit_total 4; bot_kick; mp_warmup_end; mp_restartgame 1; mp_round_restart_delay 2; mp_ignore_round_win_conditions 0; say GLHF!"
+				}
+				
+				"EnableTraining"
+				{
+					"hotkey"	"9"
+					"label"	"Training mode"
+					"cmd"	"sv_cheats 1; mp_forcecamera 0; mp_solid_teammates 1; mp_limitteams 0; mp_autoteambalance 0; mp_spectators_max 10; mp_roundtime 60; mp_roundtime_defuse 60; mp_roundtime_hostage 60; mp_maxmoney 60000; mp_startmoney 60000; mp_freezetime 0; mp_buytime 9999; mp_buy_anywhere 1; mp_radar_showall 1; sv_enablebunnyhopping 1; sv_autobunnyhopping 1; sv_infinite_ammo 2; ammo_grenade_limit_total 5; bot_kick; mp_warmup_end; mp_restartgame 1; say Тренировка включена!"
+				}
+				
+				
+			}
+		}
+		
+		"radio"
+		{
+			"hotkey"	"3"
+			"title"	"РАДИО"
+			"timeout"	"3"
+			
+			"Commands"
+			{
+				"roger"
+				{
+					"hotkey"	"1"
+					"label"	"#SFUI_Radio_Roger"
+					"cmd"	"roger"
+				}
+				
+				"negative"
+				{
+					"hotkey"	"2"
+					"label"	"#SFUI_Radio_Negative"
+					"cmd"	"negative"
+				}
+				
+				"needbackup"
+				{
+					"hotkey"	"3"
+					"label"	"#SFUI_Radio_Need_Backup"
+					"cmd"	"needbackup"
+				}
+				
+				"holdpos"
+				{
+					"hotkey"	"4"
+					"label"	"#SFUI_Radio_Hold_Pos"
+					"cmd"	"holdpos"
+				}
+				
+				"go"
+				{
+					"hotkey"	"5"
+					"label"	"#SFUI_Radio_Go"
+					"cmd"	"go"
+				}
+  				"thanks"
+				{
+					"hotkey"	"6"
+					"label"	"#SFUI_Radio_Thanks"
+					"cmd"	"thanks"
+				}
+
+				"cheer"
+				{
+					"hotkey"	"7"
+					"label"	"#SFUI_Radio_Cheer"
+					"cmd"	"cheer"
+				}	
+				
+				"sorry"
+				{
+					"hotkey"	"8"
+					"label"	"Sorry (Teammates)"
+					"cmd"	"say_team Sorry!
+				}	
+
+				"askfordrop"
+				{
+					"hotkey"	"9"
+					"label"	"Drop (Teammates)"
+					"cmd"	"needbackup; say_team I need a drop, pls!"
+				}				
+			}
+		}
+	}
+}
